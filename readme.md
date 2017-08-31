@@ -6,7 +6,7 @@ This repository contains files to calculate Shewhart control charts.
 
 ## Data
 
-The data file is available [here (kpis.csv)](https://drive.google.com/file/d/0BzrdQfHR2I5Dc0o5X3puNHUxdTQ/view?usp=sharing). It consists of a date column and six KPI data columns. Dates are entered using [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date format (yyyy-mm-dd). The KPI columns are the number of commits per KPI.
+Download the [data file](https://drive.google.com/open?id=0BzrdQfHR2I5DRld4MndVT2R0dEk). It consists of a "Date" column and an "X" column of floats or integers. Dates are entered using [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date format (yyyy-mm-dd).
 
 ## Methodology
 
