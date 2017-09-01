@@ -10,7 +10,7 @@ Download the [data file](https://drive.google.com/open?id=0BzrdQfHR2I5DRld4MndVT
 
 ## Methodology
 
-A Git "commit" is a recorded change to a repository. Each day an office worker determines the number of commits made for each repository, records the values in the kpis.csv file, and executes kpis.py or kpis.ipynb. A graph of individual commits v. date and a graph of total commits v. date are created and saved in svg and pdf formats.
+The first charts presented here are the individual and moving range control charts, also called XmR or ImR. The data are collected using rational samples. The individual values (sample size is one) are plotted in time order, a central line (average) is plotted, and control limits above and below the central line are plotted.
 
 ## License
 
