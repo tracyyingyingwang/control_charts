@@ -10,7 +10,7 @@ Download the [data file](https://drive.google.com/open?id=0BzrdQfHR2I5DRld4MndVT
 
 ## Methodology
 
-The first charts presented here are the individual and moving range control charts, also called XmR or ImR. The data are collected using rational samples. The individual values (sample size is one) are plotted in time order, a central line (average) is plotted, and control limits above and below the central line are plotted.
+There are two sets of control charts in this repository. The individual and moving range control charts, also called XmR or ImR, are used to plot rational samples of size 1. The average and range control charts, also called XbarR, are used to plot rational samples of size > 1. In both cases the values are plotted in time order. A central line (average) and control limits above and below the central line are plotted.
 
 ## License
 
