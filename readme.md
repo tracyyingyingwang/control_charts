@@ -2,15 +2,7 @@
 
 ## In brevi
 
-This repository contains files to calculate Shewhart control charts, also called process behaviour charts. These charts are used to determine if the variation of a process is stable and predictable, that is, in a state of statistical control. In-control variation arises from chance or common causes. No changes or adjustments to the process are needed. The chart can be used to predict future performance. Out-of-control variation arises from special or assignable causes. These charts help identify the special causes in order minimize or eliminate their effect.
-
-## Data
-
-Download the [data file](https://drive.google.com/open?id=0BzrdQfHR2I5DRld4MndVT2R0dEk). It consists of a "Date" column and an "X" column of floats or integers. Dates are entered using [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date format (yyyy-mm-dd).
-
-## Methodology
-
-There are two sets of control charts in this repository. The individual and moving range control charts, also called XmR or ImR, are used to plot rational samples of size 1. The average and range control charts, also called XbarR, are used to plot rational samples of size > 1. In both cases the values are plotted in time order. A central line (average) and control limits above and below the central line are plotted.
+This repository contains files to calculate Shewhart control charts, also called process behaviour charts. These charts are used to determine if the variation of a process is stable and predictable, that is, in a state of statistical control. In-control variation arises from chance or common causes. No changes or adjustments to the process are needed. The charts can be used to predict future performance. Out-of-control variation arises from special or assignable causes. These charts help identify the special causes in order minimize or eliminate their effect.
 
 ## License
 
