@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 # Read the csv data file. It is encoded in UTF-8.
 # The values to plot are in column X.
 # Set "date" as the index.
-chart_data = pd.read_csv('xmr.csv', parse_dates=True, index_col='Date')
-
+#chart_data = pd.read_csv('xmr.csv', parse_dates=True, index_col='Date')
+chart_data = pd.read_csv('xmr.csv')
 
 # Define for the X chart the graph title and subtitle, and the x and y axis labels.
 x_chart_title = 'Individuals Control Chart'
