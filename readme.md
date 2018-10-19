@@ -6,4 +6,4 @@ This repository contains files to calculate Shewhart control charts, also called
 
 # Examples
 
-Examples of the XmR and XbarR control charts are found in examples.md.
+Examples of the XmR and XbarR control charts are found in [examples.md](examples.md).
