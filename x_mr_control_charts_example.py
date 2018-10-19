@@ -22,6 +22,8 @@ ax1 = x.ax
 ax1.set_title('X control chart' + '\n' 'Subtitle')
 ax1.set_ylabel('Response (units)')
 ax1.set_xlabel('X axis label')
+plt.show()
+#plt.clf()
 mr = mR(chart_data)
 print('mR chart')
 print('Upper control limit', mr.ucl, sep=' = ')
