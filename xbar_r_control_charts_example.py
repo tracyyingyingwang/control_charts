@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from datasense import Xbar
 from datasense import R
 
-chart_data = pd.read_csv(Path(__file__).parent / 'xmr.csv',
+chart_data = pd.read_csv(Path(__file__).parent / 'xbarr.csv',
                          index_col='Sample').iloc[:, 0:]
 x = X(chart_data)
 print('X chart')
