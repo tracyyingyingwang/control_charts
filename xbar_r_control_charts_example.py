@@ -5,8 +5,8 @@ from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from datasense import X
-from datasense import mR
+from datasense import Xbar
+from datasense import R
 
 chart_data = pd.read_csv(Path(__file__).parent / 'xmr.csv',
                          index_col='Sample').iloc[:, 0:]
