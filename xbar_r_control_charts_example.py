@@ -9,16 +9,16 @@ from datasense import Xbar, R
 
 chart_data = pd.read_csv(Path(__file__).parent / 'xbarr.csv',
                          index_col='Sample').iloc[:, 0:]
-x = X(chart_data)
-print('X chart')
+x = Xbar(chart_data)
+print('Xbar chart')
 print('Upper control limit', x.ucl, sep=' = ')
 print('Average moving range', x.mean, sep=' = ')
 print('Lower control limit', x.lcl, sep=' = ')
-print(f'Sigma(X)', x.sigma, sep=' = ')
+print(f'Sigma(Xbar)', x.sigma, sep=' = ')
 for i in range(-3, 4):
     print(f'{i} Sigma', ' '.join(map(str, [x.sigmas[i]])), sep=' = ')
 ax1 = x.ax
-ax1.set_title('X control chart' + '\n' 'Subtitle')
+ax1.set_title('Xbar control chart' + '\n' 'Subtitle')
 ax1.set_ylabel('Response (units)')
 ax1.set_xlabel('X axis label')
 plt.show()
