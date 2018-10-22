@@ -23,7 +23,7 @@ ax1.set_ylabel('Response (units)')
 ax1.set_xlabel('X axis label')
 ax1.figure.savefig('x.svg', format='svg') # Comment if you wish interactive
 # plt.show() # Uncomment if you wish interactive
-# plt.clf()
+plt.clf() # Comment if you wish interactive
 mr = mR(chart_data)
 print('mR chart')
 print('Upper control limit', mr.ucl, sep=' = ')
@@ -38,4 +38,4 @@ ax2.set_ylabel('Response (units)')
 ax2.set_xlabel('X axis label')
 ax2.figure.savefig('mr.svg', format='svg') # Comment if you wish interactive
 # plt.show() # Uncomment if you wish interactive
-# plt.clf()
+plt.clf() # Comment if you wish interactive
