@@ -21,7 +21,8 @@ ax1 = x.ax
 ax1.set_title('X control chart' + '\n' 'Subtitle')
 ax1.set_ylabel('Response (units)')
 ax1.set_xlabel('X axis label')
-plt.show()
+ax1.figure.savefig('x.svg', format='svg') # Comment if you wish interactive
+# plt.show() # Uncomment if you wish interactive
 # plt.clf()
 mr = mR(chart_data)
 print('mR chart')
@@ -35,5 +36,6 @@ ax2 = mr.ax
 ax2.set_title('mR control chart' + '\n' 'Subtitle')
 ax2.set_ylabel('Response (units)')
 ax2.set_xlabel('X axis label')
-plt.show()
+ax2.figure.savefig('mr.svg', format='svg') # Comment if you wish interactive
+# plt.show() # Uncomment if you wish interactive
 # plt.clf()
