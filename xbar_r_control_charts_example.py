@@ -7,6 +7,9 @@ import matplotlib.pyplot as plt
 
 from datasense import Xbar, R
 
+# Write all text output to file. In the command line one can type:
+# python xbar_r_control_charts_example.py | tee xbar_r.txt
+
 chart_data = pd.read_csv(Path(__file__).parent / 'xbarr.csv',
                          index_col='Sample').iloc[:, 0:]
 xbar = Xbar(chart_data)
