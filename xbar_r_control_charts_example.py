@@ -1,5 +1,9 @@
 #! /usr/bin/env python3
 
+# Start of time estimation for the script.
+import datetime as dt
+start_time = dt.datetime.now()
+
 from pathlib import Path
 
 import pandas as pd
@@ -42,3 +46,6 @@ ax2.set_xlabel('X axis label')
 ax2.figure.savefig('r.svg', format='svg') # Comment if you wish interactive
 # plt.show() # Uncomment if you wish interactive
 plt.clf() # Comment if you wish interactive
+
+end_time = dt.datetime.now()
+print((end_time - start_time).total_seconds())
