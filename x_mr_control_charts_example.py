@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from datasense import X, mR
 
 # Write all text output to file. In the command line one can type:
-# python process_analysis.py | tee process_analysis.txt
+# python x_mr_control_charts_example.py | tee x_mr.txt
 
 chart_data = pd.read_csv(Path(__file__).parent / 'xmr.csv',
                          index_col='Sample').iloc[:, 0:]
