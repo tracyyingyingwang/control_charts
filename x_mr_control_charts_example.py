@@ -1,11 +1,5 @@
 #! /usr/bin/env python3
 
-# control_charts/x_mr_control_charts_example.py
-
-# Start of time estimation for the script.
-import datetime as dt
-start_time = dt.datetime.now()
-
 from pathlib import Path
 
 import pandas as pd
@@ -13,12 +7,12 @@ import matplotlib.pyplot as plt
 
 from datasense import X, mR
 
-# Write all text output to file. In the command line one can type:
-# python x_mr_control_charts_example.py | tee x_mr.txt
-
 chart_data = pd.read_csv(Path(__file__).parent / 'xmr.csv',
                          index_col='Sample').iloc[:, 0:]
-x = X(chart_data)
+x = X(chart_data) # This default method works for subgroup of 2.
+#  x = X(chart_data, 2) # One way to specify the subgroup size.
+#  x = X(chart_data, subgropu_size=2) # Another way to specify.
+
 print('X chart')
 print('Upper control limit', x.ucl, sep=' = ')
 print('Average moving range', x.mean, sep=' = ')
@@ -48,6 +42,3 @@ ax2.set_xlabel('X axis label')
 ax2.figure.savefig('mr.svg', format='svg') # Comment if you wish interactive
 # plt.show() # Uncomment if you wish interactive
 plt.clf() # Comment if you wish interactive
-
-end_time = dt.datetime.now()
-print((end_time - start_time).total_seconds())
